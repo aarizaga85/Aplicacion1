@@ -56,6 +56,7 @@ fun Greeting(name: String) {
 //                .align(Alignment.TopEnd)
 //        )
 //    }
+    
     Column(
         modifier = Modifier
             .background(Color.Red)
