@@ -27,11 +27,59 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
+fun Greeting(name: String) {
+//    Box( modifier = Modifier
+//            .size(400.dp)) {
+//        Text(
+//            text = "Text1",
+//            color = Color.Blue,
+//            fontSize = 20.sp,
+//            modifier = Modifier
+//                .align(Alignment.BottomStart)
+//        )
+//        Text(
+//            text = "Text2",
+//            color = Color.Blue,
+//            fontSize = 20.sp,
+//            modifier = Modifier
+//                .align(Alignment.TopEnd)
+//        )
+//    }
+    
+    Column(
+        modifier = Modifier
+            .background(Color.Red)
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Row {
+            Text(
+                text = "Text1",
+                color = Color.Blue,
+                fontSize = 20.sp,
+                modifier = Modifier
+                    .size(80.dp)
+            )
+            Text(
+                text = "Text2",
+                color = Color.Blue,
+                fontSize = 20.sp,
+                modifier = Modifier
+                    .size(80.dp)
+            )
+        }
+        Text(
+            text = "Hola $name!",
+            color = Color.Blue,
+            fontSize = 40.sp
+        )
+        Text(
+            text = "Otro texto",
+            color = Color.Blue,
+            fontSize = 40.sp
+        )
+    }
 }
 
 @Preview(showBackground = true)
