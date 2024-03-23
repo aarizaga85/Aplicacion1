@@ -88,14 +88,14 @@ fun NameListPerson() {
                 .weight(1f)
             )
             Button(
-                modifier = Modifier
-                    .padding(end = 16.dp),
+                modifier = Modifier.padding(end = 16.dp),
                 onClick = {
                     isPaused = true
                 }) {
                 Icon(
                     imageVector = Icons.Default.Warning,
-                    contentDescription = "Icono de ańadir")
+                    contentDescription = null
+                )
             }
             Button(
                 modifier = Modifier
@@ -106,7 +106,8 @@ fun NameListPerson() {
                 }) {
                 Icon(
                     imageVector = Icons.Default.Refresh,
-                    contentDescription = "Icono de ańadir")
+                    contentDescription = null
+                )
             }
 
         }
